@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galactic Binary Decoder</title>
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="stars" id="starsContainer"></div>
+
+    <div class="container">
+        <h1>⚡ Galactic Decoder</h1>
+        <p class="subtitle">Transform text to binary across the universe</p>
+
+        <div class="mode-toggle">
+            <button class="mode-btn active" data-mode="encode">📝 Text to Binary</button>
+            <button class="mode-btn" data-mode="decode">🔓 Binary to Text</button>
+        </div>
+
+        <div class="input-section">
+            <label for="input">Enter your message:</label>
+            <textarea id="input" rows="5" placeholder="Type something..."></textarea>
+        </div>
+
+        <div class="output-section">
+            <label>Output:</label>
+            <div class="output-box" id="output">
+                <div class="empty-state">Your converted message will appear here ✨</div>
+            </div>
+        </div>
+
+        <div class="stats" id="stats" style="display:none;">
+            <div class="stat-item">
+                <div class="stat-label">Characters</div>
+                <div class="stat-value" id="charCount">0</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Binary Bits</div>
+                <div class="stat-value" id="bitCount">0</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Bytes</div>
+                <div class="stat-value" id="byteCount">0</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Linking JS -->
+    <script src="script.js"></script>
+</body>
+</html>
